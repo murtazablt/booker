@@ -334,9 +334,14 @@ body {
 
 .gallery {
   display: flex; }
+  .gallery__item {
+    scale: 1;
+    transition: all 0.3s; }
   .gallery__photo {
     width: 100%;
     display: block; }
+  .gallery__item:hover {
+    transform: scale(1.07); }
 
 .overview {
   display: flex;
