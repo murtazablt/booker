@@ -131,15 +131,19 @@
   &__menu {
     box-sizing: border-box;
     position: absolute;
-
-    opacity: 0;
+    z-index: 20;
 
     min-width: 12.6rem;
     top: 7rem;
     right: -0.1rem;
 
     transform: translateX(100%);
+    opacity: 0;
     transition: all 0.3s ease-in-out;
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 3.7rem;
+    }
   }
   &__menu-content {
     background-color: var(--color-grey-light-2);
@@ -180,6 +184,66 @@
   &__user:hover &__menu {
     opacity: 1;
     transform: translateX(0);
+  }
+
+  &__close-icon-box {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    width: min-content;
+    height: min-content;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    opacity: 0;
+    transform: translate(950%, 680%);
+    transition: all 0.3s;
+  }
+
+  &__close-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: -3rem;
+
+    fill: var(--color-primary-light);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__close-icon-box {
+      display: block;
+    }
+
+    &__close-icon-box:hover + &__menu {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    &__close-icon-link:active,
+    &__close-icon-link:visited {
+      text-decoration: none;
+      opacity: 0;
+    }
+    &__close-icon-box:hover {
+      opacity: 0;
+      transform: translate(-550%, -680%);
+      width: 10rem;
+      height: 10rem;
+    }
+    &__user:hover &__close-icon-box {
+      opacity: 1;
+      transform: translate(700%, 670%);
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    &__user:hover &__close-icon-box {
+      opacity: 1;
+      transform: translate(700%, 570%);
+    }
   }
 }
 
