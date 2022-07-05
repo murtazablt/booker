@@ -218,7 +218,9 @@ body {
     justify-content: center;
     align-items: center; }
   .user-nav__user {
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    display: flex;
+    flex-wrap: wrap; }
   .user-nav__user-photo {
     height: 3.75rem;
     width: 3.75rem;
@@ -267,19 +269,14 @@ body {
     display: none;
     position: absolute;
     z-index: 30;
-    width: min-content;
-    height: min-content;
-    width: 1.5rem;
-    height: 1.5rem;
-    opacity: 0;
-    transform: translate(950%, 680%);
-    transition: all 0.3s; }
+    width: 15%;
+    height: 100%;
+    transform: translate(280%, 145%); }
   .user-nav__close-icon {
     display: block;
     width: 100%;
     height: 100%;
-    margin-left: -3rem;
-    fill: var(--color-primary-light); }
+    fill: var(--color-grey-dark-1); }
   @media only screen and (max-width: 56.25em) {
     .user-nav__close-icon-box {
       display: block; }
@@ -289,18 +286,16 @@ body {
     .user-nav__close-icon-link:active, .user-nav__close-icon-link:visited {
       text-decoration: none;
       opacity: 0; }
-    .user-nav__close-icon-box:hover {
-      opacity: 0;
-      transform: translate(-550%, -680%);
-      width: 10rem;
-      height: 10rem; }
     .user-nav__user:hover .user-nav__close-icon-box {
       opacity: 1;
-      transform: translate(700%, 670%); } }
+      transform: translate(180%, 145%); }
+    .user-nav__close-icon-box:hover {
+      opacity: 0;
+      transform: translate(280%, 145%); } }
   @media only screen and (max-width: 31.25em) {
     .user-nav__user:hover .user-nav__close-icon-box {
       opacity: 1;
-      transform: translate(700%, 570%); } }
+      transform: translate(180%, 145%); } }
 
 .side-nav {
   font-size: 1.4rem;

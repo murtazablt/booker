@@ -120,6 +120,8 @@
 
   &__user {
     transition: all 0.3s;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__user-photo {
@@ -190,24 +192,21 @@
     display: none;
     position: absolute;
     z-index: 30;
-    width: min-content;
-    height: min-content;
+    width: 15%;
+    height: 100%;
 
-    width: 1.5rem;
-    height: 1.5rem;
+    //start
+    //transform: translate(180%, 145%);
 
-    opacity: 0;
-    transform: translate(950%, 680%);
-    transition: all 0.3s;
+    //end
+    transform: translate(280%, 145%);
   }
 
   &__close-icon {
     display: block;
     width: 100%;
     height: 100%;
-    margin-left: -3rem;
-
-    fill: var(--color-primary-light);
+    fill: var(--color-grey-dark-1);
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -225,15 +224,15 @@
       text-decoration: none;
       opacity: 0;
     }
-    &__close-icon-box:hover {
-      opacity: 0;
-      transform: translate(-550%, -680%);
-      width: 10rem;
-      height: 10rem;
-    }
+
     &__user:hover &__close-icon-box {
       opacity: 1;
-      transform: translate(700%, 670%);
+      transform: translate(180%, 145%);
+    }
+
+    &__close-icon-box:hover {
+      opacity: 0;
+      transform: translate(280%, 145%);
     }
   }
 
@@ -242,7 +241,7 @@
   @media only screen and (max-width: $bp-smallest) {
     &__user:hover &__close-icon-box {
       opacity: 1;
-      transform: translate(700%, 570%);
+      transform: translate(180%, 145%);
     }
   }
 }
