@@ -1,34 +1,34 @@
 /*
 COLORS
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
+Primary: #1B65A7;
+Primary light: #2077c6;
+Primary dark: #12426e;
 
-Grey light 1: #faf9f9
+Grey light 1: #FFFFFF
 Grey light 2: #f4f2f2
 Grey light 3: #f0eeee
 Grey light 4: #ccc
 
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
+Grey dark 1: #040615;
+Grey dark 2: #0c1240;
+Grey dark 3: #141f6b;
 
 */
 
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
+  --color-primary: #1b65a7;
+  --color-primary-light: #2077c6;
+  --color-primary-dark: #12426e;
 
-  --color-grey-light-1: #faf9f9;
+  --color-grey-light-1: #ffffff;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
 
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
+  --color-grey-dark-1: #040615;
+  --color-grey-dark-2: #0c1240;
+  --color-grey-dark-3: #141f6b;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
