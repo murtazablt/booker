@@ -7,5 +7,5 @@ npm install
 ## Second Step:
 npm start
 
-## For Production:
+## For Building:
 npm run build:css
